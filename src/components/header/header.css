@@ -1,0 +1,9 @@
+.navbar{
+    display: flex;
+}
+.navbar-inside{
+    display: flex;
+    gap: 55px;
+    margin-right: 100px;
+   
+}
