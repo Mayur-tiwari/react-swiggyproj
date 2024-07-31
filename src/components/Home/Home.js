@@ -12,7 +12,7 @@ const Home = () => {
     useEffect(()=>{ getResaurantsData()},[])
 
     async function getResaurantsData(){
-      const data = await fetch('https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.7195687&lng=75.8577258&page_type=DESKTOP_WEB_LISTING')
+      const data = await fetch('https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.7195687&lng=75.8577258&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING')
       const json = await data.json()     
       console.log(json);   
       console.log(json?.data?.success?.cards[1]?.gridWidget?.gridElements?.infoWithStyle?.restaurants);   
